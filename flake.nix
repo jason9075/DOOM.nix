@@ -4,16 +4,12 @@
   inputs = {
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    nixgl.url = "github:nix-community/nixGL";
   };
 
-  outputs = { nixpkgs, nixgl, ... }:
+  outputs = { nixpkgs, ... }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        overlays = [ nixgl.overlay ];
-      };
+      pkgs = import nixpkgs { inherit system; };
     in {
       devShells.x86_64-linux.default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
