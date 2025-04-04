@@ -861,7 +861,7 @@ void D_DoomMain(void) {
   startskill = sk_medium;
   startepisode = 1;
   startmap = 1;
-  autostart = false;
+  autostart = true;
 
   p = M_CheckParm("-skill");
   if (p && p < myargc - 1) {

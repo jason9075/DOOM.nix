@@ -2,4 +2,5 @@
 
 export DISPLAY=:2
 cd ../linuxdoom-1.10
-./linux/linuxxdoom -3
+make
+./linux/linuxxdoom -2

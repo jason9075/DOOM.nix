@@ -18,6 +18,12 @@ Ensure you have the following dependencies installed:
 
 Make sure you have a valid doom1.wad (Shareware) or doom.wad (Full Version) in the current directory.
 
+You can use entr to start game automatically with
+
+```bash
+fd . | entr -r sh -c 'make && ../scripts/launch_game.sh'
+```
+
 ## 📚 Additional Resources
 
 [Official Doom Source Code](https://github.com/id-Software/DOOM#)

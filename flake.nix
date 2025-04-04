@@ -20,6 +20,7 @@
           xorg.libXext.dev # <X11/extensions/Xshm.h>
           libnsl # ld: 找不到 -lnsl: No such file or directory
           xorg.xorgserver # need xephyr to run pseudo 256-color X11
+          # slade # wad editor
         ];
 
         shellHook = ''
